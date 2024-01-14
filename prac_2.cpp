@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//structure of employee to store data
 struct employee
 {
     int id;
@@ -21,6 +22,7 @@ int main()
 
     while(1)
     {
+        //menu selection
         cout<< "Enter 1 to add Employee Details.\n";
         cout<< "Enter 2 to view Employee Details.\n";
         cout<< "Enter 3 to EXIT.\n";
@@ -29,6 +31,7 @@ int main()
 
         switch(choice)
         {
+            //case to add employee details
         case 1 :
             cout<<"\nEnter employee ID : ";
             cin>>serial;
@@ -53,8 +56,9 @@ int main()
             cout<<endl;
             break;
 
+            //case to view employee details
         case 2 :
-            system("cls");
+            system("cls");           //to clear screen
             cout<<"Enter employee ID : ";
             cin>>serial;
             fflush(stdin);
