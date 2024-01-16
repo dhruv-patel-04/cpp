@@ -5,14 +5,53 @@
 
 using namespace std;
 
+
 //structure of employee to store data
 struct employee
 {
-    int id;
+    //below are private object accessed within structure only
+private :
     string name;
     string qualification;
     float exp;
     long long c_no;
+
+    //below are public object which can be accessed within main() also
+public :
+    int id;
+
+    //function to collect data from user
+    void getdata()
+    {
+        cout<<"Enter Name of Employee : ";
+        cin >> name;
+        fflush(stdin);
+
+        cout<<"Enter Qualification of Employee : ";
+        cin >> qualification;
+        fflush(stdin);
+
+        cout<<"Enter Experience of Employee in years : ";
+        cin >> exp;
+        fflush(stdin);
+
+        cout<<"Enter the contact number of Employee : ";
+        cin >> c_no;
+        fflush(stdin);
+        cout<<endl;
+    }
+
+
+    //function to display the stored data
+    void putdata()
+    {
+        cout << "--------------------------------" << endl;
+        cout << "\nEmployee Name : " << name << endl;
+        cout << "\nQualification : " << qualification << endl;
+        cout << "\nExperience : " << exp << endl;
+        cout << "\nContact Number : " << c_no << endl << endl;
+        cout << "--------------------------------" << endl << endl;
+    }
 };
 
 int main()
@@ -31,47 +70,25 @@ int main()
 
         switch(choice)
         {
-            //case to add employee details
+        //case to add employee details
         case 1 :
             cout<<"\nEnter employee ID : ";
             cin>>serial;
             fflush(stdin);
             e[serial].id = serial;
-
-            cout<<"Enter Name of Employee : ";
-            cin >> e[serial].name;
-            fflush(stdin);
-
-            cout<<"Enter Qualification of Employee : ";
-            cin >> e[serial].qualification;
-            fflush(stdin);
-
-            cout<<"Enter Experience of Employee in years : ";
-            cin >> e[serial].exp;
-            fflush(stdin);
-
-            cout<<"Enter the contact number of Employee : ";
-            cin >> e[serial].c_no;
-            fflush(stdin);
-            cout<<endl;
+            e[serial].getdata();                    //getdata function is called
             break;
 
-            //case to view employee details
+        //case to view employee details
         case 2 :
-            system("cls");           //to clear screen
+            system("cls");                          //to clear screen
             cout<<"Enter employee ID : ";
             cin>>serial;
             fflush(stdin);
             cout << endl;
-
             if(e[serial].id == serial)
             {
-                cout << "--------------------------------" << endl;
-                cout << "\nEmployee Name : " << e[serial].name << endl;
-                cout << "\nQualification : " << e[serial].qualification << endl;
-                cout << "\nExperience : " << e[serial].exp << endl;
-                cout << "\nContact Number : " << e[serial].c_no << endl << endl;
-                cout << "--------------------------------" << endl << endl;
+                e[serial].putdata();                 //putdata function is called
             }
             else
             {
@@ -80,6 +97,7 @@ int main()
                 cout << "********************************" << endl << endl;
             }
             break;
+
 
         case 3 :
             exit(0);
