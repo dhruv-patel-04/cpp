@@ -7,9 +7,9 @@ using namespace std;
 int main()
 {
     char s_id[8];
-    string s_name, sub[10];
-    int sem, credit[10], i,j;
-    int marks[10][2];
+    string s_name, sub[3];
+    int sem, credit[3], i,j;
+    int marks[3][2];
 
     //input of student details
     cout<<"Enter Details Of Student"<<endl<<"Student ID : ";
@@ -24,15 +24,8 @@ int main()
     cin>>sem;
     fflush(stdin);
 
-    int n;
-
-    //input no of sub
-    cout<<"Enter No of Subject : ";
-    cin>>n;
-    fflush(stdin);
-
     //input of subject names and credit
-    for(i=0;i<n;i++)
+    for(i=0;i<3;i++)
     {
      cout<<"Enter Name of subject "<<i+1<<" : ";
      getline(cin,sub[i]);
@@ -43,7 +36,7 @@ int main()
     }
 
     //entering marks of student
-    for(i=0; i<n; i++)
+    for(i=0; i<3; i++)
     {
         for(j=0; j<1; j++)
         {
@@ -57,7 +50,7 @@ int main()
         }
     }
 
-    int grade_point[n*2][2];
+    int grade_point[3][2];
 
     //print marksheet
     cout<<endl<<"Result of the Student is generated successfully."<<endl;
@@ -71,7 +64,7 @@ int main()
     cout<<setw(38)<<"Theory"<<setw(15)<<"Practical"<<endl;
 
     //calculate grade_point and display grade
-    for(i=0; i<n; i++)
+    for(i=0; i<3; i++)
     {
         cout<<left<<setw(35)<<sub[i];
         for(j=0; j<=1; j++)
@@ -122,7 +115,7 @@ int main()
 
     int total_credit=0;
     //calculate total credit
-    for(i=0;i<n;i++)
+    for(i=0;i<3;i++)
     {
         total_credit=total_credit + credit[i];
     }
@@ -130,7 +123,7 @@ int main()
     float sgpa=0;
 
     //calculate sgpa
-    for(i=0;i<n;i++)
+    for(i=0;i<3;i++)
     {
         for(j=0;j<=1;j++)
         {

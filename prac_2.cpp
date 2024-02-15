@@ -100,7 +100,7 @@ int main()
 
 
         case 3 :
-            exit(0);
+            exit(0);            //function to exit program
             break;
 
         default :
