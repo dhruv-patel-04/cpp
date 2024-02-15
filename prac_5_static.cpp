@@ -14,21 +14,21 @@ public :
     circle()                //default constructor
     {
         radius = 1;
-        area = (3.14*radius*radius);
+        area = (3.148*radius*radius);
         active_object++;
     }
 
     circle(float r)         //parameterized constructor
     {
         radius = r;
-        area = (3.14*radius*radius);
+        area = (3.148*radius*radius);
         active_object++;
     }
 
     circle(circle &r)       //copy constructor
     {
         radius = r.radius;
-        area = (3.14*r.radius*r.radius);
+        area = (3.148*r.radius*r.radius);
         active_object++;
     }
 
