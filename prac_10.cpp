@@ -20,7 +20,7 @@ public :
     employee(float &e)
     {
         year = e;
-        month = 12*((e-year)*100)/100;
+        month = 12*(e-year);
     }
 
     //display output
