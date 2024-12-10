@@ -5,47 +5,47 @@
 1. Develop a C++ program for CHARUSAT student marksheet generator. <br>
    *(I/O operations)*
 
-3. Develop a C++ program store and retrieve CHARUSAT employee details.
+2. Develop a C++ program store and retrieve CHARUSAT employee details. <br>
    *(Structure, access specifiers)*
 
-5. Create a car data management system for TATA motors using C++.
+3. Create a car data management system for TATA motors using C++. <br>
    *(class)*
 
-7. Develop a system to calculate the area of a shape.
+4. Develop a system to calculate the area of a shape. <br>
    *(Function overloading)*
 
-9. Develop a system to calculate the area of circle.
+5. Develop a system to calculate the area of circle. <br>
    *(constructor, destructor, dynamic memory allocation)*
 
-11. Extend the functionality of CHARUSAT employee system (practical 2) to retrieve the average experience of the CHARUSAT employees.
-  *(static data members, static/constant member functions)*
+6. Extend the functionality of CHARUSAT employee system (practical 2) to retrieve the average experience of the CHARUSAT employees. <br>
+   *(static data members, static/constant member functions)*
 
-12. Create a C++ program to perform simple mathematic operations of complex number.
-  *(operator overloading)*
+7. Create a C++ program to perform simple mathematic operations of complex number. <br>
+   *(operator overloading)*
 
-13. Extend the functionality of CHARUSAT employee system (practical 6) to manage two type of employee details teaching and non-teaching employee. 
-  *(Inheritance)*
+8. Extend the functionality of CHARUSAT employee system (practical 6) to manage two type of employee details teaching and non-teaching employee. <br>
+   *(Inheritance)*
 
-14. Create a C++ code for millimeter and centimeter measurement converter.
-  *(class to class conversion)*
+9. Create a C++ code for millimeter and centimeter measurement converter. <br>
+    *(class to class conversion)*
 
-15. Create a C++ code to take floating point number and assign to employee experience. 
+10. Create a C++ code to take floating point number and assign to employee experience. <br>
   *(Basic to class conversion)*
 
-16. Create a C++ code to take employee experience to represent as floating point value. 
+11. Create a C++ code to take employee experience to represent as floating point value. <br> 
   *(class to basic conversion)*
 
-17. Develop a C++ program for CHARUSAT students marksheet generator (practical 1) using class.
+12. Develop a C++ program for CHARUSAT students marksheet generator (practical 1) using class. <br>
   *(friend function, friend class)*
 
-18. Update the CHARUSAT employee system (practical 8) as per given class diagram. 
+13. Update the CHARUSAT employee system (practical 8) as per given class diagram. <br>
   *(function overriding)*
 
-19. Develop a C++ program for library management system. 
+14. Develop a C++ program for library management system. <br>
   *(virtual class)*
 
-20. Develop a C++ program for amazon product as per given class diagram.
+15. Develop a C++ program for amazon product as per given class diagram. <br>
   *(dynamic memory allocation, constructor in derived class, pure virtual function, abstract class)*
 
-21. Update the TATA motors system (practical 3) to get input from the file.
-  *(file handling)*
+16. Update the TATA motors system (practical 3) to get input from the file. <br>
+    *(file handling)*
